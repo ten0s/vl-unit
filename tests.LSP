@@ -1,0 +1,27 @@
+(defun add-tests ()
+  (vlu-assert-equal 3 (+ 1 2))
+  (vlu-assert-equal 6 (+ (+ 1 2) 3))
+  (vlu-assert-equal 0 0))
+
+(defun equal-tests ()
+  (vlu-assert-true (equal nil nil))
+  (vlu-assert-false (equal nil t))
+  (vlu-assert-equal nil nil)
+  (vlu-assert-equal '(a) '(a)))
+
+(defun true-tests ()
+  (vlu-assert-true t)
+  (vlu-assert-true 0)
+  (vlu-assert-true 1)
+  (vlu-assert-true 'one)
+  (vlu-assert-true '(a)))
+
+(defun false-tests ()
+  (vlu-assert-false nil))
+
+(vlu-remove-tests)
+(vlu-add-test 'add-tests)
+(vlu-add-test 'equal-tests)
+(vlu-add-test 'true-tests)
+(vlu-add-test 'false-tests)
+(vlu-run-tests)
