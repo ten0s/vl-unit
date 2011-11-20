@@ -1,0 +1,1 @@
+Evaluate vl-unit.lsp first, then you can evaluate tests such as rock-scissors-paper.lsp or tests.lsp. 
