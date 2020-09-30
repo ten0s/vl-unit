@@ -1,1 +1,3 @@
-Evaluate vl-unit.lsp first, then you can evaluate tests such as rock-scissors-paper.lsp or tests.lsp. 
+This library is now a part of https://github.com/ten0s/velisp.
+
+Evaluate vl-unit.lsp first, then you can evaluate tests such as rock-scissors-paper.lsp or tests.lsp.
